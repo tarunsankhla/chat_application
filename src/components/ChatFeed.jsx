@@ -72,7 +72,7 @@ function ChatFeed(props) {
           <div className='chat-title'>{chat?.title}</div>
           <div className='chat-subtitle'>
             {
-              chat.people.map((itemPerson) => itemPerson.person.username ==localStorage.getItem('username-chatengine') ? `${itemPerson.person.username}` : "")
+              chat.people.map((itemPerson) => itemPerson.person.username ===localStorage.getItem('username-chatengine') ? `${itemPerson.person.username}` : "")
             }
           </div>
         </div>
